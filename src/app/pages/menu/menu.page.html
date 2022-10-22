@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Circle Tap</ion-title>
+  </ion-toolbar>
+
+  <div class="contentDiv">
+    <div class="scoresDiv">
+      <ion-item class="firstItem">
+        <ion-title color="primary">Top Scores</ion-title>
+        <ion-text></ion-text>
+      </ion-item>
+      <ion-item *ngFor="let snens of scoresAscend | slice:0:5; let i = index" [attr.data-index]="i">
+        <ion-text>{{ i + 1}}. {{ snens.username }} - {{ snens.score }}</ion-text>
+      </ion-item>
+      <!-- <ion-item>
+        <ion-text>2. Nohell - 496</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-text>3. JakobDev - 430</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-text>4. DanielDaNeueLehrling - 402</ion-text>
+      </ion-item>
+      <ion-item>
+        <ion-text>5. Maaaathias - 387</ion-text>
+      </ion-item> -->
+    </div>
+    <ion-button class="roundBtn" (click)="play()" >
+      Play!
+    </ion-button>
+    <ion-title class="ion-text-center playText"></ion-title>
+    <ion-button class="htp" (click)="htp()" fill="outline">How to play!</ion-button>
+  </div>  
+
+  <div *ngIf="afAuth.user | async as user; else show">
+    <ion-button class="logout" (click)="logOut()">LogOut</ion-button>
+  </div>
+  <ng-template #show>
+    <p class="signIn ion-text-center">Sign in to upload your scores.</p>
+    <firebase-ui></firebase-ui>
+  </ng-template>
+</ion-content>

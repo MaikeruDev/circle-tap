@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+ion-toolbar{
+    border-radius: 0 0 50% 50%;
+    padding-bottom: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 120%;
+}
+
+ion-toolbar>ion-title{
+    padding-top: 25px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 35px;
+}
+
+ion-content{
+    align-items: center;
+    text-align: center;
+}
+
+.contentDiv{
+    padding-top: 100px;
+    padding-right: 5%;
+}
+
+ion-text{
+    float:left;
+}
+
+ion-item>ion-title{
+    padding-left: 0px;
+}
+
+.firstItem{
+    --border-color: #3856ff;
+}
+
+.roundBtn{
+    margin-top: 6%;
+    --border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.playText{
+    margin-top: 3%;
+}
+
+.htp{
+    margin-top: 2%;
+}
+
+.logout{
+    margin-right: 5%;
+}
+
+
+.signIn{
+    margin-bottom: 0;
+    margin-top: 5%;
+    color: #3856ff;
+}

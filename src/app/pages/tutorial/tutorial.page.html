@@ -1,0 +1,31 @@
+<ion-content>
+  <ion-slides color="primary">
+    <ion-slide class="firstSlide">
+      <ion-toolbar color="primary">
+        <ion-title class="ion-text-center" class="smallTitle">How to Play</ion-title>
+        <ion-title class="ion-text-center" class="bigTitle">Circle Tap!</ion-title>
+        <ion-item class="centerItem">
+          <ion-label>Swipe left</ion-label>
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </ion-item>            
+      </ion-toolbar>
+    </ion-slide>
+    <ion-slide>
+      <p class="ion-text-center">When the game starts, try to tap all the circles on your screen!</p>
+    </ion-slide>
+    <ion-slide class="thirdSlide">
+      <p class="ion-text-center">After you tapped on the circle, you will have a short period of time to press the next one.</p>
+    </ion-slide>
+    <ion-slide>
+      <p class="ion-text-center">The more circles you press, the faster you have to get or you will lose.</p>
+    </ion-slide>
+    <ion-slide class="fifthSlide">
+      <p class="ion-text-center">You can see how much time you have to press the next one, on the bottom of the screen.</p>
+    </ion-slide>
+    <ion-slide class="lastSlide">      
+      <p class="ion-text-center">You now know the basics of the game!</p>
+      <ion-button (click)="menu()" class="lastBtn"><ion-icon class="iconBtn" name="arrow-forward-outline" slot="icon-only"></ion-icon></ion-button>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
